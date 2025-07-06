@@ -5,5 +5,6 @@ all:
 
 install:
 	# install cocohalpetools to the Python site-packages
-	python setup.py build_ext install
+	python setup.py build_ext
+	python -m pip install ./
 	rm -rf build
